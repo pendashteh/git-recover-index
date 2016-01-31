@@ -17,7 +17,7 @@ main () {
 		rm -f $_git_recover_index_tmpfile
 		exit
 	fi
-q	_count=$(wc -l < $_git_recover_index_tmpfile)
+	_count=$(wc -l < $_git_recover_index_tmpfile)
 	mkdir -p $_git_recover_index_recover_path
 	echo "$_count lost commit found. Processing..."
 	_git_recover_commits
