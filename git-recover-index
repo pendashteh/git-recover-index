@@ -7,7 +7,7 @@ main () {
 	# @TODO use variable in the python script
 
 	_git_recover_index_tmpfile=$root/.git-lost-commits
-	_git_recover_index_recover_path=$root/git-recovered
+	_git_recover_index_recover_path=$root/GIT_RECOVERED
 	# get list of all lost commits
 	git fsck --cache --unreachable $(git for-each-ref --format="%(objectname)") | tr -s " " | cut -d " " -f 3 > $_git_recover_index_tmpfile
 
